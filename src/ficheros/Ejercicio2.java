@@ -2,7 +2,6 @@ package ficheros;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
-import java.io.FileReader;
 import java.io.IOException;
 import java.nio.file.FileSystemNotFoundException;
 
@@ -39,6 +38,7 @@ public class Ejercicio2 {
 					texto=texto+linea+'\n';
 					linea=in.readLine();
 				}
+				in.close();
 			} catch (IOException e) {
 				
 				e.printStackTrace();
